@@ -132,6 +132,7 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += cgroup_disable=pressure
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Media
 TARGET_USES_ION := true
