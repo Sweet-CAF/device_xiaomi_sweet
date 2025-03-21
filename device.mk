@@ -234,30 +234,12 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti
-
-PRODUCT_PACKAGES += \
-    gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy \
-    gnss@2.0-xtwifi-client.policy \
-    gnss@2.0-xtwifi-inet-agent.policy
-
-PRODUCT_PACKAGES += \
-    libbatching \
-    libgeofencing \
-    libgnss \
     libsensorndkbridge
-
-PRODUCT_PACKAGES += \
-    gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/gps/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+TARGET_GPS_COMPONENT_VARIANT := gps
 
 # Health
 PRODUCT_PACKAGES += \
@@ -396,6 +378,7 @@ TARGET_BOARD_PLATFORM := sm6150
 
 # QTI Component
 TARGET_COMMON_QTI_COMPONENTS := \
+    gps \
     perf
 
 PRODUCT_COPY_FILES += \
