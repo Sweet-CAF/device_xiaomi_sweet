@@ -395,6 +395,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
