@@ -48,14 +48,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    audio.usb.default \
-    audio.r_submix.default
+    audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
@@ -271,12 +266,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor \
-    libOmxAacEnc \
-    libOmxAmrEnc \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
@@ -361,6 +351,7 @@ TARGET_BOARD_PLATFORM := sm6150
 
 # QTI Component
 TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
     display \
     gps \
     perf
