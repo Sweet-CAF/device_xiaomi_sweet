@@ -3,7 +3,6 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-
 android_app {
     name: "XiaomiParts",
     defaults: [
@@ -18,16 +17,11 @@ android_app {
     privileged: true,
 
     static_libs: [
-        "androidx.core_core",
-        "androidx.preference_preference",
-        "org.lineageos.settings.resources",
+        "co.aospa.resources",
         "SettingsLib",
-        "vendor.xiaomi.hardware.displayfeature-V1.0-java",
-        "vendor.xiaomi.hardware.touchfeature-V1.0-java",
     ],
 
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
-
 }
