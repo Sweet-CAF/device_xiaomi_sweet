@@ -173,10 +173,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
@@ -269,14 +265,6 @@ PRODUCT_PACKAGES += \
     TelephonyOverlaySweet \
     WifiOverlaySweet
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/interfaces \
-    hardware/google/pixel
-
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
@@ -286,6 +274,10 @@ TARGET_BOARD_PLATFORM := sm6150
 # qdcm
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_k6_38_0c_0a_fhd_dsc_video_dsi_panel.xml
+
+# QTI Component
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # Ramdisk
 PRODUCT_PACKAGES += \
