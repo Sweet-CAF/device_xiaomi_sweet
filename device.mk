@@ -266,17 +266,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
-# Overlays
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigResSweet \
-    FrameworksResSweet \
-    SettingsResSweet \
-    SystemUIResSweet \
-    TelephonyResSweet \
-    WifiResSweet
-
-PRODUCT_PACKAGES += \
-    NotchBarKiller
+    CarrierConfigOverlaySweet \
+    FrameworksOverlaySweet \
+		NotchBarKillerOverlaySweet \
+    SettingsOverlaySweet \
+    SystemUIOverlaySweet \
+    TelephonyOverlaySweet \
+    WifiOverlaySweet
 
 # Perf
 PRODUCT_PACKAGES += \
