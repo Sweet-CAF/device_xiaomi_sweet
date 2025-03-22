@@ -152,6 +152,10 @@ TARGET_SEPOLICY_DIR := msmsteppe
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2023-03-01
 
+
+BOARD_SEPOLICY_M4DEFS += \
+    sysfs_battery_supply=vendor_sysfs_battery_supply
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
