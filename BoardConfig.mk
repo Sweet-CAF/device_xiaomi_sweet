@@ -154,7 +154,8 @@ VENDOR_SECURITY_PATCH := 2023-03-01
 
 
 BOARD_SEPOLICY_M4DEFS += \
-    sysfs_battery_supply=vendor_sysfs_battery_supply
+    sysfs_battery_supply=vendor_sysfs_battery_supply \
+    sysfs_usb_supply=vendor_sysfs_usb_supply
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
