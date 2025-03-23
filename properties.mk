@@ -46,11 +46,6 @@ ro.vendor.audio.soundfx.usb=true \
 ro.vendor.audio.us.type=mius \
 vendor.audio.mic.status=off
 
-# Audio (Bluetooth)
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.bluetooth.a2dp_offload.disabled=true \
-ro.bluetooth.a2dp_offload.supported=false
-
 # Audio (Features)
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.adm.buffering.ms=6 \
@@ -119,18 +114,18 @@ bluetooth.profile.opp.enabled=true \
 bluetooth.profile.pan.nap.enabled=true \
 bluetooth.profile.pan.panu.enabled=true \
 bluetooth.profile.pbap.server.enabled=true \
-bluetooth.profile.sap.server.enabled=false
+bluetooth.profile.sap.server.enabled=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.bluetooth.ble_drop_power=true \
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
-persist.vendor.qcom.bluetooth.enable.splita2dp=false \
 persist.vendor.qcom.bluetooth.enable.swb=false \
-persist.vendor.qcom.bluetooth.enable.swbpm=false \
-persist.vendor.qcom.bluetooth.scram.enabled=true \
-persist.vendor.qcom.bluetooth.soc=cherokee \
-persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.enable.swbpm=false
+
+# Bluetooth
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.bluetooth.bqr.event_mask=14 \
+persist.bluetooth.bqr.min_interval_ms=500
 
 # Blur
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -151,6 +146,21 @@ ro.charger.enable_suspend=true
 # Set fcc_main to 400mA to avoid the risk of vph_pwr drop
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.vendor.cp.fcc_main_ua=400000
+
+# Bluetooth
+PRODUCT_VENDOR_PROPERTIES += \
+bluetooth.device.class_of_device=90,2,12 \
+bluetooth.profile.asha.central.enabled=true \
+bluetooth.profile.bas.client.enabled=true \
+bluetooth.profile.hfp.ag.enabled=true \
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false \
+persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+persist.vendor.qcom.bluetooth.scram.enabled=true \
+persist.vendor.qcom.bluetooth.soc=cherokee \
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+persist.vendor.bluetooth.modem_nv_support=true \
+ro.vendor.bluetooth.wipower=false \
+vendor.qcom.bluetooth.soc=cherokee
 
 # Chipset
 PRODUCT_VENDOR_PROPERTIES += \
