@@ -28,6 +28,9 @@
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                                                u:object_r:persist_subsys_file:s0
 
+# perf
+/vendor/lib64/vendor\.qti\.hardware\.perf@2\.2\.so                                              u:object_r:same_process_hal_file:s0
+
 # Touch Feature
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                              u:object_r:hal_touchfeature_xiaomi_default_exec:s0
 
