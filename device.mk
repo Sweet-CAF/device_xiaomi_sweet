@@ -270,6 +270,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     perf \
+    usb \
     vibrator
 
 # Ramdisk
@@ -278,7 +279,6 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.dcvs.sh \
     init.qcom.rc \
     init.sweet.rc \
@@ -325,14 +325,6 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
 # vndservicemanager
 PRODUCT_PACKAGES += \
