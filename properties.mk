@@ -164,7 +164,6 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Chipset
 PRODUCT_VENDOR_PROPERTIES += \
-ro.soc.manufacturer=QTI \
 ro.soc.model=SM7150
 
 # Crypto
