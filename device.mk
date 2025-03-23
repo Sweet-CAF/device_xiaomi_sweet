@@ -271,7 +271,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     perf \
     usb \
-    vibrator
+    vibrator \
+    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
