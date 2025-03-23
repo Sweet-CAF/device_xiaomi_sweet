@@ -190,7 +190,6 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor
 
@@ -268,6 +267,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI Component
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     perf \
     vibrator
