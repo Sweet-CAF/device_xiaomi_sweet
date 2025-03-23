@@ -269,7 +269,8 @@ PRODUCT_COPY_FILES += \
 # QTI Component
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
-    perf
+    perf \
+    vibrator
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -336,10 +337,6 @@ PRODUCT_COPY_FILES += \
 # vndservicemanager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.sweet
 
 # WiFi
 PRODUCT_PACKAGES += \
