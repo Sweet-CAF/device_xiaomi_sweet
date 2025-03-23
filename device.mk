@@ -175,10 +175,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libgui_vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.sweet
-
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
