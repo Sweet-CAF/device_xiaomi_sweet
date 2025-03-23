@@ -225,22 +225,10 @@ persist.sys.sf.color_saturation=1.0 \
 ro.hardware.egl=adreno \
 ro.hardware.vulkan=adreno \
 ro.opengles.version=196610 \
-vendor.display.comp_mask=0 \
-vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0 \
-vendor.display.disable_decimation=1 \
-vendor.display.disable_excl_rect=0 \
-vendor.display.disable_excl_rect_partial_fb=1 \
-vendor.display.disable_hw_recovery_dump=1 \
-vendor.display.disable_inline_rotator=1 \
 vendor.display.disable_metadata_dynamic_fps=1 \
-vendor.display.disable_scaler=0 \
-vendor.display.disable_ui_3d_tonemap=1 \
-vendor.display.enable_default_color_mode=1 \
 vendor.display.enable_force_split=1 \
 vendor.display.enable_null_display=0 \
-vendor.display.enable_optimize_refresh=1 \
-vendor.display.qdcm.mode_combine=1 \
-vendor.gralloc.disable_ubwc=0
+vendor.display.qdcm.mode_combine=1
 
 PRODUCT_SYSTEM_PROPERTIES += \
 debug.hwui.skia_atrace_enabled=false
@@ -343,11 +331,9 @@ ro.build.shutdown_timeout=2
 # Surfaceflinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 debug.sf.frame_rate_multiple_threshold=120 \
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.has_HDR_display=true \
 ro.surface_flinger.has_wide_color_display=true \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-ro.surface_flinger.max_virtual_display_dimension=4096 \
 ro.surface_flinger.protected_contents=true \
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
