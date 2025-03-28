@@ -3,6 +3,3 @@ vendor_internal_prop(vendor_displayfeature_prop);
 
 # Fingerprint
 vendor_public_prop(vendor_fp_prop);
-
-# Power HAL
-vendor_internal_prop(vendor_power_prop);

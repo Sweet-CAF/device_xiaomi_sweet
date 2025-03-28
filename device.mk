@@ -197,10 +197,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.sweet
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
@@ -293,11 +289,6 @@ PRODUCT_PACKAGES += \
 
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.sweet-libperfmgr \
-    android.hardware.power@1.2.vendor
 
 # Properties
 include $(LOCAL_PATH)/properties.mk
