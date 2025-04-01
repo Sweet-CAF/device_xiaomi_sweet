@@ -306,7 +306,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.dcvs.sh \
     init.qcom.rc \
-    init.qcom.usb.rc \
+    init.sweet.usb.rc \
     init.sweet.rc \
     init.target.rc \
     ueventd.sweet.rc
